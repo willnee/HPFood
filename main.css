@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
 :root {
   --primary-color: #CDA922;
 }
@@ -6,16 +8,12 @@ body {
   width: 1920px;
   margin: 0;
   padding: 0;
-  font-family: 'Be Vietnam', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  
   margin: 0 3em;
   text-align: center;
   height: 88px;
@@ -26,21 +24,15 @@ body {
 }
 
 .navbar nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: unset;
   height: auto;
 }
 
 .navbar nav ul {
   margin: 32px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
   list-style-type: none;
 }
 
@@ -60,7 +52,7 @@ body {
 }
 
 .navbar nav #search-bar {
-  margin-right: 55px;
+  margin-left: 500px;
   border: 1px solid #DEDEDE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -68,6 +60,7 @@ body {
 }
 
 .navbar nav #cart-icon {
+  margin-left: 33px;
   height: 1.3em;
 }
 
@@ -86,7 +79,6 @@ body {
   top: 160px;
   margin: auto 560px;
   color: #DEB722;
-  ;
 }
 
 .banner .title h1 {
@@ -96,14 +88,15 @@ body {
 }
 
 .banner .title p {
+  font-family: 'Charmonman', cursive;
   text-align: center;
   width: 800px;
-  font-size: 24px;
+  font-size: 44px;
 }
 .features{
   position: absolute;
   z-index: 1200px;
-  margin: -240px 351px 16px 351px;
+  margin: -100px 351px 16px 351px;
   margin-bottom: 1em;
   vertical-align: middle;
 }
@@ -146,7 +139,208 @@ body {
   width: 100%;
   margin: auto;
 }
+.features .new-food{
+  width: 1200px;
+  border-radius: 8px;
+  padding: 8px 0 24px 0;
+  margin-bottom: 16px;
+  background: var(--primary-color);
+}
+.features .list-new-food{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  list-style-type: none;
+  gap:16px;
+  margin: 24px 24px 0 24px;
+  background: var(--primary-color);
+}
+
+.features .list-new-food .food-block{
+  background: white;
+  width: 276px;
+  border-radius: 6px;
+}
+.features .food-short{
+  text-align: left;
+  margin:10px;
+}
+
+.features .food-short a{
+  text-decoration: none;
+  color: #111111;
+  font-weight: 500;
+  font-size: 18px;
+  vertical-align: top;
+}
+.features .food-short .food-name{
+  margin: 0;
+  font-size: 18px;
+}
+.features .food-short .food-price {
+  margin: 0;
+  padding: 0;
+}
+.features .food-short .food-price li{
+  list-style-type: none;
+  margin: 3px 0px 3px 5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.features .food-short .food-price li img{
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
 
 
+.features .list-food{
+  width: 1200px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  padding-top: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 24px;
+}
+.features .list-features-food{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  
+}
+.features .list-food .food-images{
+  width: 217px;
+}
+.features .list-food .list-food-title{
+  list-style-type: none;
+  display:flex ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+      justify-content: space-between;
 
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 0;
+}
+.features .list-food .food-block {
+  background: white;
+  width: 200px;
+  border-radius: 8px;
+  margin: 10px;
+}
+.features .discount{
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.features .discount img{
+  margin:10px;
+}
+.features .list-food .list-food-title li {
+  text-align: left;
+  margin: 5px;
+}
+.features .list-food .list-food-title li span{
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 28px;
+  margin: 5px;
+}
+.features .list-food .list-food-title li a{
+  vertical-align: middle;
+  font-size: 16px;
+  margin-right: 12px;
+  color:var(--primary-color);
+  text-decoration: none;
+}
 
+.features .list-food .list-food-title li img{  
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.first-col {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.second-col {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.third-col {
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.fourth-col {
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.fifth-col {
+  -ms-grid-column: 5;
+  grid-column: 5;
+}
+
+.service {
+  margin-top: 1990px;
+  padding: 40px 360px 80px 360px;
+  background: linear-gradient(0deg, #947917 0%, #31290b 100%);
+}
+
+.service-title {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.service-show {
+  display: grid;
+  grid-template-columns: repeat(4, 282px);
+  gap: 24px;
+}
+
+.service-content {
+  padding: 255px 20px 24px 20px;
+  color: white;
+}
+
+.service-content .service-name {
+  margin: 12px 0;
+}
+
+.service-content .service-short-desc {
+  margin-top: 0;
+  font-size: 14px;
+  height: 65px;
+}
+
+.service-content .service-detail-btn {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 4px;
+  width: 120px;
+  height: 32px;
+  cursor: pointer;
+}
+
+#thiet-ke-tiec-cuoi {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/thiet-ke-tiec-cuoi.png");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("img/thiet-ke-tiec-cuoi.png");
+}
+
+#ban-gallery {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/ban-gallery.png");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("img/ban-gallery.png");
+}
+
+#trang-tri-hoa-cuoi {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/trang-tri-hoa-tuoi.png");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("IMG/trang-tri-hoa-tuoi.png");
+}
+
+#chup-anh-cuoi {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/chup-anh-cuoi.png");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("IMG/chup-anh-cuoi.png");
+}
