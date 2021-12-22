@@ -388,12 +388,11 @@ footer .container{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 footer .container .HP-GROUP{
   min-width: 432px;
+  flex: 1;
 }
 footer .container .HP-GROUP p{
   font-size: 16px;
@@ -404,6 +403,7 @@ footer .support{
   list-style-type: none;
   min-width: 152px;
   margin:0 30px;
+  flex: 0.5;
 }
 footer .support h4{
   color:white;vertical-align: top;
@@ -421,14 +421,25 @@ footer .support .list-service li a{
 
 }
 footer .contact{
-  min-width: 491px;
+  flex:2;
+  min-width: 700px;
   list-style-type: none;
-  margin-left: 50px;
 }
-footer .support .group li{
-  margin-right: 5px;
+footer .contact .group li p{
+  color: rgba(255, 255, 255, 0.7);
 }
-footer .support .group li a{
-  text-decoration: none;
-  list-style-type: none;
+footer .contact .group{
+  display:flex;
+  gap:14px
+}
+
+
+.copyright{
+  background-color: #111111;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+.copyright p{
+  color: white;
 }
