@@ -386,7 +386,7 @@ footer .support .list-service{
 
 }
 footer .support .list-service li {
-  margin: 8px 0;
+  margin: 20px 0;
 }
 footer .support .list-service li a{
   text-decoration: none;
@@ -398,14 +398,18 @@ footer .contact{
   min-width: 700px;
   list-style-type: none;
 }
-footer .contact .group li p{
-  color: rgba(255, 255, 255, 0.7);
-}
 footer .contact .group{
   display:flex;
   gap: 10px;
 }
 
+footer .contact .group li{
+  margin:6px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .contact .group a{
+  margin: 20px 2px;
+}
 
 .copyright{
   background-color: #111111;
