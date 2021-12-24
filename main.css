@@ -51,15 +51,15 @@ body {
   border-bottom: solid var(--primary-color);
 }
 
-.navbar nav #search-bar {
+#search-bar {
+   height: 30px;
   margin-left: 500px;
   border: 1px solid #DEDEDE;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 40px;
 }
 
-.navbar nav #cart-icon {
+#cart-icon {
   margin-left: 33px;
   height: 1.3em;
 }
@@ -70,8 +70,7 @@ body {
 }
 
 .banner img {
-  -webkit-filter: brightness(30%);
-          filter: brightness(30%);
+  filter: brightness(30%);
 }
 
 .banner .title {
@@ -105,12 +104,7 @@ body {
   color: white;
   background: var(--primary-color);
   display:flex ;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-      justify-content: space-between;
-
+  justify-content: space-between;
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
@@ -211,12 +205,7 @@ body {
 .features .list-food .list-food-title{
   list-style-type: none;
   display:flex ;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-      justify-content: space-between;
-
+  justify-content: space-between;
   margin-bottom: 5px;
   margin-top: 5px;
   padding-left: 0;
@@ -229,11 +218,8 @@ body {
 }
 .features .discount{
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 32px;
-}
-.features .discount img{
-  margin:10px;
+  justify-content: space-between;
+  margin: 20px auto;
 }
 .features .list-food .list-food-title li {
   text-align: left;
@@ -259,27 +245,22 @@ body {
   padding-right: 10px;
 }
 .first-col {
-  -ms-grid-column: 1;
   grid-column: 1;
 }
 
 .second-col {
-  -ms-grid-column: 2;
   grid-column: 2;
 }
 
 .third-col {
-  -ms-grid-column: 3;
   grid-column: 3;
 }
 
 .fourth-col {
-  -ms-grid-column: 4;
   grid-column: 4;
 }
 
 .fifth-col {
-  -ms-grid-column: 5;
   grid-column: 5;
 }
 
@@ -326,34 +307,26 @@ body {
 }
 
 #thiet-ke-tiec-cuoi {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/thiet-ke-tiec-cuoi.png");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("img/thiet-ke-tiec-cuoi.png");
 }
 
 #ban-gallery {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/ban-gallery.png");
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("img/ban-gallery.png");
+ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("img/ban-gallery.png");
 }
 
 #trang-tri-hoa-cuoi {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/trang-tri-hoa-tuoi.png");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("IMG/trang-tri-hoa-tuoi.png");
 }
 
 #chup-anh-cuoi {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(14.06%, rgba(0, 0, 0, 0)), color-stop(67.71%, rgba(0, 0, 0, 0.9))), url("../asset/chup-anh-cuoi.png");
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%), url("IMG/chup-anh-cuoi.png");
 }
 
 .video{
   padding: 24px 320px;
   background: #111111;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .video .video-carousel{
   display: grid;
@@ -421,7 +394,7 @@ footer .support .list-service li a{
 
 }
 footer .contact{
-  flex:2;
+  flex:1.5;
   min-width: 700px;
   list-style-type: none;
 }
@@ -430,7 +403,7 @@ footer .contact .group li p{
 }
 footer .contact .group{
   display:flex;
-  gap:14px
+  gap: 10px;
 }
 
 
