@@ -48,11 +48,41 @@ body {
 .navbar nav .active,
 .navbar nav a:hover {
   color: var(--primary-color);
-  border-bottom: solid var(--primary-color);
+  border-bottom:2px solid var(--primary-color);
 }
 
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-list{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 230px;
+  border:1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+  z-index: 1;
+}
+.dropdown .dropdown-list a {
+  display: block;
+  margin: 6px;
+  text-align: left;
+  color: black;
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  width: 200px;
+  font-weight: normal;
+}
+.dropdown:hover .dropdown-list {
+  display: block;
+}
+.dropdown a img{
+  display: inline-block;
+  margin-bottom: 3px;
+}
 #search-bar {
-   height: 30px;
+  height: 30px;
   margin-left: 500px;
   border: 1px solid #DEDEDE;
   box-sizing: border-box;
@@ -91,6 +121,31 @@ body {
   text-align: center;
   width: 800px;
   font-size: 44px;
+}
+
+.address{
+  position: absolute;
+  z-index: inherit;
+  margin: 10px 351px 16px 351px;
+  margin-bottom: 1em;
+  vertical-align: middle;
+  display: inline-flex;
+}
+.address li{
+  list-style-type: none;
+  
+  margin-left: 8px;
+}
+.address li a{
+  text-decoration: none;
+  color: #111111;
+}
+.address li a:hover{
+  color: var(--primary-color);
+}
+.address li img{
+  margin-left: 8px;
+
 }
 .features{
   position: absolute;
